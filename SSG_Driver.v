@@ -1,17 +1,35 @@
 `timescale 1ns / 1ps
-/* ********************************* CECS 360 *********************************
- *    Name:       Chanartip Soonthornwan
- *    Email:      Chanartip.Soonthornwan@gmail.com
- *    Filename:   
- *    Date:       September 8, 2017
- *    Purpose:
- *
- *
- *    Note:
- *
- *    Version:     1.0     Rev date: 9/8/2017
- *
- * ****************************************************************************/
+//*****************************************************************************//
+//    This document contains information proprietary to the                    //
+//    CSULB student that created the file - any reuse without                  //
+//    adequate approval and documentation is prohibited                        //
+//                                                                             //
+//    Class:         CECS360 Integrated Circuits Design                        //
+//    Project name:  Counter on 7-segment display                              //
+//    File name:     SSG_Driver.v                                              //
+//                                                                             //
+//    Created by Chanartip Soonthornwan on September 17, 2017.                 //
+//    Copyright @ 2017 Chanartip Soonthornwan. All rights reserved.            //
+//                                                                             //
+//    Abstract:      The top level of 7-segment display on Nexys3              //
+//                   displays interconnection between modules.                 //
+//                   Receiving 16-bit input(Count) then LED_control            //
+//                   will select which anode to display and which              //
+//                   part of Count to Multiplexer, then Multiplexer            //
+//                   choose bits on Count to convert into 7-bit hex            //
+//                   output at hex_to7segment before output to on board        //
+//                                                                             //
+//    In submitting this file for class work at CSULB                          //
+//    I am confirming that this is my work and the work                        //
+//    of no one else.                                                          //
+//                                                                             //
+//    In the event other code sources are utilized I will                      //
+//    document which portion of code and who is the author                     //
+//                                                                             //
+//    In submitting this code I acknowledge that plagiarism                    //
+//    in student project work is subject to dismissal from the class           //
+//                                                                             //
+//*****************************************************************************//
 module SSG_Driver(clk, rst, count, anode, sseg);
 
    input         clk, rst;                // 200Hz clock and reset signal
