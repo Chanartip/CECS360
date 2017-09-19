@@ -11,7 +11,10 @@
 //    Created by Chanartip Soonthornwan on September 17, 2017.                 //
 //    Copyright @ 2017 Chanartip Soonthornwan. All rights reserved.            //
 //                                                                             //
-//    Abstract:                   //
+//    Abstract:      A finite state machine to wait for the input              //
+//                   signal from mechanical switch or button to be             //
+//                   stable around 30ms before output a confirm                //
+//                   stable signal.                                            //
 //                                                                             //
 //    In submitting this file for class work at CSULB                          //
 //    I am confirming that this is my work and the work                        //
